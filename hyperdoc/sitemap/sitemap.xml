@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.9">
+<url>      
+  <loc>http://www.hyperdoc.co.za/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>      
+  <loc>http://www.hyperdoc.co.za/home/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>      
+  <loc>http://www.hyperdoc.co.za/about-us/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>      
+  <loc>http://www.hyperdoc.co.za/advisory-board/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>      
+  <loc>http://www.hyperdoc.co.za/register-its-free/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>      
+  <loc>http://www.hyperdoc.co.za/management-team/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>      
+  <loc>http://www.hyperdoc.co.za/development-team/</loc>
+  <lastmod>2017-07-08</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
+</urlset>

@@ -1,0 +1,15 @@
+<select name="submit_new" id="submit_new">
+    <option value="Stdo">Studio</option>
+    <option value="Flm">Film</option>
+    <option value="Drctr">Director</option>
+</select>
+<button type="submit_type" id="submit_new_button">Go</button>
+<script>
+$("#submit_new_button").click(function() {
+    var link = '{% url add_record 'NEWVALUESTUB' %}';
+    link = link.replace('NEWVALUESTUB', $("#submit_new").val());
+    window.location.href = link;
+});
+
+</script>
+

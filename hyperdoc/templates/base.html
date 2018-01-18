@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HyperDoc | South Africa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="{{ MEDIA_URL }}css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="{{ MEDIA_URL }}css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="{{ MEDIA_URL }}css/font-awesome.css" rel="stylesheet"> 
+<link rel="stylesheet" href="{{ MEDIA_URL }}css/lightbox.css">
+<link href="//fonts.googleapis.com/css?family=Timmana&amp;subset=telugu" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-102266934-1', 'auto');
+  ga('send', 'pageview');
+</script>
+		<script type="text/javascript">
+		function Homecare() {
+		var sE = null, url;
+		var x = null, baseurl;
+		if(document.getElementById) {
+		sE = document.getElementById('urlList');
+		x = document.getElementById('List');
+		} else if(document.all) {
+		sE = document.all['urlList'];
+		x = document.all['List'];
+		}
+		if((sE && (url = sE.options[sE.selectedIndex].value)) && (x && (baseurl = x.options[x.selectedIndex].value))) {
+		location.href = baseurl+url;
+		}
+		}
+		function Doctors() {
+		var ssE = null, url;
+		var y = null, dbaseurl;
+		if(document.getElementById) {
+		ssE = document.getElementById('urllList');
+		y = document.getElementById('DList');
+		} else if(document.all) {
+		ssE = document.all['urllList'];
+		y = document.all['DList'];
+		}
+		if((ssE && (url = ssE.options[ssE.selectedIndex].value)) && (y && (dbaseurl = y.options[y.selectedIndex].value))) {
+		location.href = dbaseurl+url;
+		}
+		}
+		function Medical() {
+		var seE = null, url;
+		var z = null, cbaseurl;
+		if(document.getElementById) {
+		seE = document.getElementById('urrlList');
+		z = document.getElementById('CList');
+		} else if(document.all) {
+		seE = document.all['urrlList'];
+		z = document.all['CList'];
+		}
+		if((seE && (url = seE.options[seE.selectedIndex].value)) && (z && (cbaseurl = z.options[z.selectedIndex].value))) {
+		location.href = cbaseurl+url;
+		}
+		}
+		$(function() {
+		    $("#btn1").click(function() {
+		        var seloptions = $("select#List").val() || "";
+		        if (seloptions != "") {
+		            $("#result").text("Please select our service.");
+		        } else {
+		            $("#result").text("Please select your city.");
+		        }
+		    });
+		});
+		$(function() {
+		    $("#btn2").click(function() {
+		        var seloptions = $("select#DList").val() || "";
+		        if (seloptions != "") {
+		            $("#results").text("Please select our specialty.");
+		        } else {
+		            $("#results").text("Please select your city.");
+		        }
+		    });
+		});
+		$(function() {
+		    $("#btn3").click(function() {
+		        var seloptions = $("select#CList").val() || "";
+		        if (seloptions != "") {
+		            $("#resultss").text("Please select health centre.");
+		        } else {
+		            $("#resultss").text("Please select your city.");
+		        }
+		    });
+		});
+		</script>
+</head>
+<body>
+<div class="demo-2" id="home">
+    <div id="large-header" class="large-header main-w3l">
+		<div class="header">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header navbar-left">
+						<h1 style="text-transform:none"><a href="/">HyperDoc</a></h1>
+					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="header-right">
+						<div class="agileits-topnav">
+							<ul>
+								<li><span class="glyphicon glyphicon-earphone"></span> +27 791116246</li>
+								<li><a class="email-link" href="mailto:hyper@gmail.com"> <span class="glyphicon glyphicon-envelope"></span>hyperdoc.sa@gmail.com</a></li>
+								<li class="social-icons"> 
+									<ul>
+										<li><a href="https://www.facebook.com/hyperdoc.co.za/" class="fa fa-facebook icon icon-border facebook" target="_blank"></a></li>
+										<li><a href="https://www.instagram.com/" class="fa fa-instagram icon icon-border googleplus" target="_blank"></a></li>
+										<li><a href="https://twitter.com/Hyper_Doc" class="fa fa-twitter icon icon-border twitter" target="_blank"></a></li>
+										<li><a href="https://www.youtube.com/" class="fa fa-youtube icon icon-border googleplus" target="_blank"></a></li> 
+									</ul>
+									<div class="clearfix"> </div> 
+								</li>
+							</ul>
+						</div>
+						<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav navbar-left">
+								<li class="active"><a href="/home/"><span>HOME</span></a></li>
+								<li><a href="/about-us/">ABOUT US</a></li>
+								<li><a href="/advisory-board/">ADVISORY BOARD</a></li>
+								<li><a href="/register-its-free/" style="border:1px solid red;">REGISTER IT'S FREE!</a></li>
+							</ul>		
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>	
+			</nav>		
+		</div>	
+		<canvas id="demo-canvas"></canvas>
+		<div class="banner-w3text">
+			<h3 style="color:green;">Want <span>Health Solutions ?</span> <span>HyperDoc</span> </h3>
+			<a href="#" class="effect6" data-toggle="modal" data-target="#HomeCareModal"><span>HomeCare</span></a>
+			<a href="#" class="effect6" data-toggle="modal" data-target="#DoctorModal"><span>Find a Doctor</span></a>
+			<a href="#" class="effect6" data-toggle="modal" data-target="#MedicalModal"><span>Medical Centres</span></a>
+			<p>South African's Fastest Growing Healthcare Company</p>
+		</div>
+	</div>
+</div>
+<div class="modal about-modal w3-agileits fade" id="HomeCareModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+			<img src="{{ MEDIA_URL }}images/img.jpg" alt="">
+	      	<center>
+	      		<p style="color:#000">Home Care – Care in your home’s comfort.</p>
+				<form class="form-inline" role="form">
+			        <div class="form-group">
+				        <select name="select" class="form-control" id="List" placeholder="Services">
+						    <option value="">Select Your City</option> 
+						    {% for city in cities %}
+						    <option value="{{ city.tag }}">{{ city.name }}</option>
+						    {% endfor %}
+						</select>
+			        </div>
+			        <div class="form-group">
+						<select name="select" class="form-control" id="urlList" placeholder="Services">
+						    <option value="">Select Our Services</option> 
+						    {% for service in services %}
+						    <option value="/homecare/{{ service.id }}/{{ service.tag }}/">{{ service.name }}</option> 
+						    {% endfor %}
+						</select>
+					</div>
+					<div class="form-group">
+					<input type="button" class="btn btn-info" id="btn1" value="Find Now" onclick="Homecare();">
+			        </div>
+			    </form>
+			    <div id="result" style="color:red;"></div>
+			</center>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="modal about-modal w3-agileits fade" id="DoctorModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+			<img src="{{ MEDIA_URL }}images/img.jpg" alt="">
+	      	<center>
+	      		<p style="color:#000">Doctors – Book Online Appointment.</p>
+				<form class="form-inline" role="form">
+			        <div class="form-group">
+				        <select name="select" class="form-control" id="DList" placeholder="Services">
+						    <option value="">Select Your City</option> 
+						    {% for city in cities %}
+						    <option value="{{ city.id }}">{{ city.name }}</option>
+						    {% endfor %}
+						</select>
+			        </div>
+			        <div class="form-group">
+						<select name="select" class="form-control" id="urllList" placeholder="Services">
+						    <option value="">Select Our Specialties</option> 
+						   	{% for specialist in specialties %}
+						    <option value="/doctors/{{ specialist.id }}/{{ specialist.tag }}/">{{ specialist.name }}</option>
+						    {% endfor %}
+						</select>
+					</div>
+					<div class="form-group">
+					<input type="button" class="btn btn-info" id="btn2" value="Find Now" onclick="Doctors();">
+			        </div>
+			    </form>
+			    <div id="results" style="color:red;"></div>
+			</center>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="modal about-modal w3-agileits fade" id="MedicalModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+			<img src="{{ MEDIA_URL }}images/img.jpg" alt="">
+	      	<center>
+	      		<p style="color:#000">Medical – Find Health Centre.</p>
+				<form class="form-inline" role="form">
+			        <div class="form-group">
+				        <select name="select" class="form-control" id="List" placeholder="Services">
+						    <option value="">Select Your City</option> 
+						    {% for city in cities %}
+						    <option value="{{ city.tag }}">{{ city.name }}</option>
+						    {% endfor %}
+						</select>
+			        </div>
+			        <div class="form-group">
+						<select name="select" class="form-control" id="urlList" placeholder="Services">
+						    <option value="">Select Health Centre</option> 
+						    {% for service in services %}
+						    <option value="/homecare/{{ service.id }}/{{ service.tag }}/">{{ service.name }}</option> 
+						    {% endfor %}
+						</select>
+					</div>
+					<div class="form-group">
+					<input type="button" class="btn btn-info" id="btn1" value="Find Now" onclick="Homecare();">
+			        </div>
+			    </form>
+			    <div id="result" style="color:red;"></div>
+			</center>
+			</div> 
+		</div>
+	</div>
+</div>
+{% block content %}
+{% endblock content %}
+<footer>
+	<div class="agileinfo-footer">
+		<div class="agileits-footer-bottom">
+			<div class="container">
+				<div class="ftr-menu">
+				<div class="col-lg-3">
+					 <ul>
+						<li><a href="/about-us/">About</a></li><br>
+						<li><a href="/terms-and-conditions/">Terms and Conditions</a></li><br>
+						<li><a href="/privacy-policy/">Privacy Policy</a></li><br>
+						<li><a href="/cancellation-policy/">Cancellation Policy</a></li>
+					 </ul>
+				</div>
+				<div class="col-lg-3">
+					 <ul>
+						<li><a href="/advisory-board/">Advisory Board</a></li><br>
+						<li><a href="/management-team/">Management Team</a></li><br>
+						<li><a href="/medical-team/">Medical Team</a></li><br>
+						<li><a href="/development-team/">Development Team</a></li>
+					 </ul>
+				</div>
+				<div class="col-lg-3">
+					 <ul>
+						<li><a href="#">Media & Press</a></li><br>
+						<li><a href="#">Health FAQs</a></li><br>
+						<li><a href="#">Health Videos</a></li><br>
+						<li><a href="/our-galleries/">Our Galleries</a></li>
+					 </ul>
+				</div>
+				<div class="col-lg-3">
+					 <ul>
+						<li><a href="#">Hospitals</a></li><br>
+						<li><a href="#">Doctors</a></li><br>
+						<li><a href="#">Pharmacy</a></li><br>
+						<li><a href="#">Corporates</a></li>
+					 </ul>
+				</div>
+				</div>
+				<div class="clearfix"> </div>
+				<center><p>&copy; 2017 HyperDoc. All Rights Reserved.</p></center>
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/bootstrap.js"></script>
+<script src="{{ MEDIA_URL }}js/lightbox-plus-jquery.min.js"> </script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/move-top.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL }}js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+		$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+</script>
+<script src="{{ MEDIA_URL }}js/rAF.js"></script>
+<script src="{{ MEDIA_URL }}js/demo-2.js"></script>
+<script src="{{ MEDIA_URL }}js/waypoints.min.js"></script> 
+<script src="{{ MEDIA_URL }}js/counterup.min.js"></script> 
+<script>
+	jQuery(document).ready(function( $ ) {
+		$('.counter').counterUp({
+			delay: 10,
+			time: 1000 
+		});
+	});
+</script>
+<script src="{{ MEDIA_URL }}js/jarallax.js"></script>
+<script type="text/javascript">
+	$('.jarallax').jarallax({
+		speed: 0.5,
+		imgWidth: 1366,
+		imgHeight: 768
+	})
+</script>
+<script src="{{ MEDIA_URL }}js/SmoothScroll.min.js"></script>
+</body>
+</html>

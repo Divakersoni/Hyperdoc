@@ -1,0 +1,16 @@
+{% extends 'base-main.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="team-section" id="team">
+	<div class="container">
+		<h3 class="w3l-title">Terms and Conditions</h3>
+		{% if abouts %}
+		{% for about in abouts %}
+		<p class="footer-w3l-tee">{{ about.about }}</p>
+		{% endfor %}
+		{% else %}
+		<p class="footer-w3l-tee">please contact to hyperdoc team members.</p>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

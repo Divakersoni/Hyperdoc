@@ -1,0 +1,189 @@
+{% extends 'base-main.html' %}
+{% load bootstrap %}
+{% load staticfiles %}
+{% block content %}
+<div class="team-section" id="team">
+	<div class="container">
+		<h3 class="w3l-title">Details</h3>
+		<div class="box2">
+		{% if services %}
+		{% for service in services %}
+			<div class="col-md-3">
+				<div class="view view-fifth">
+					<img src="{{ MEDIA_URL }}images/{{ service.image_url }}" alt="chef">
+				</div>
+			</div>
+			<h3>{{ service.name }}</h3>
+				<div id="share-buttons">
+					Share -
+					<a href="http://www.facebook.com/sharer.php?u=http://hyperdoc.co.za/{{ service.city.id }}/doctors/{{ service.specialist.id }}/{{ service.specialist.tag }}/{{ service.tag }}" target="_blank">
+					<img src="{{ MEDIA_URL }}images/facebook.png" alt="Facebook" />
+					</a>
+					<a href="https://twitter.com/share?url=http://hyperdoc.co.za/{{ service.country.id }}/doctors/{{ service.city.id }}/{{ service.specialist.tag }}/{{ service.tag }}&amp;text=Healthcare,%20Sexualcare,%20Diagnostic Test - Care in your home’s comfort.&amp;hashtags=SaveYour_Health" target="_blank">
+					<img src="http://hyperdoc.co.za/media/images/twitter.png" alt="Twitter" />
+					</a>
+					<a href="https://plus.google.com/share?url=http://hyperdoc.co.za/{{ service.country.id }}/doctors/{{ service.city.id }}/{{ service.specialist.tag }}/{{ service.tag }}" target="_blank">
+					<img src="http://hyperdoc.co.za/media/images/google.png" alt="Google" />
+					</a>
+					<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://hyperdoc.co.za/{{ service.country.id }}/doctors/{{ service.city.id }}/{{ service.specialist.tag }}/{{ service.tag }}" target="_blank">
+					<img src="http://hyperdoc.co.za/media/images/linkedin.png" alt="LinkedIn" />
+					</a>
+				</div>
+			<a href="#" class="trend-w3l grid-contt scroll" data-toggle="modal" data-target="#BookModal"><h6>Book Appointment</h6></a><a href="#" class="trend-w3l grid-conttt scroll" data-toggle="modal" data-target="#CallModal"><h6>Call Doctor</h6></a><br><br>
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered">
+						<tbody>
+						    <tr>
+						       	<th>Specialist :</th>
+						        <td align="left">{{ service.specialist }}</td>
+						  	</tr>
+					      	<tr>
+					        	<th>Experience :</th>
+					        	<td align="left">{{ service.experience }}+ year experience</td>
+						    </tr>
+					      	<tr>
+					        	<th>Working :</th>
+					        	<td align="left">{{ service.working }}</td>
+					      	</tr>
+						    <tr>
+						        <th>Education :</th>
+						       	<td align="left">{{ service.institutes }}</td>
+						   	</tr>
+						    <tr>
+						        <th>Services Offered :</th>
+						       	<td align="left">{{ service.service }}</td>
+						   	</tr>
+					     	<tr>
+						        <th>Online Consultation Fee :</th>
+						       	<td align="left">₹ {{ service.consultation_actual }} &nbsp; <strike> ₹ {{ service.consultation_fee }} </strike>&nbsp; {{ service.consultation_off }}% off</td>
+					      	</tr>
+						    <tr>
+						        <th>Appointment Fee :</th>
+						       	<td align="left">₹ {{ service.appointment_actual }} &nbsp; <strike> ₹ {{ service.appointment_fee }} </strike>&nbsp; {{ service.appointment_off }}% off</td>
+						   	</tr>
+						    <tr>
+						        <th>Languages known :</th>
+						       	<td align="left">{{ service.language }}</td>
+						   	</tr>
+						    <tr>
+						       	<th>Location :</th>
+						   		<td align="left">{{ service.address }}</td>
+						      	</tr>
+						   	<tr>
+						        <th>Timing :</th>
+						       	<td align="left">{{ service.timing }}</td>
+						    </tr>
+						</tbody>
+					</table>
+				</div>
+			{% endfor %}
+			{% else %}
+			<div class="col-md-3 col-xs-3 s-1-1">
+				<div class="view view-fifth">
+					<img src="{{ MEDIA_URL }}images/t1.jpg" alt="chef">
+				</div>
+			</div>
+			<div class="col-md-9 col-xs-9 s-1-1">
+				<h3>Not available</h3>
+				<div class="table-responsive">
+					<table class="table table-hover table-bordered">
+						<tbody>
+						    <tr>
+						       	<th>Specialist :</th>
+						        <td align="left">None</td>
+						  	</tr>
+					      	<tr>
+					        	<th>Experience :</th>
+					        	<td align="left">None</td>
+						    </tr>
+					      	<tr>
+					        	<th>Working :</th>
+					        	<td align="left">None</td>
+					      	</tr>
+						    <tr>
+						        <th>Education :</th>
+						       	<td align="left">None</td>
+						   	</tr>
+						    <tr>
+						        <th>Services Offered :</th>
+						       	<td align="left">None</td>
+						   	</tr>
+					     	<tr>
+						        <th>Online Consultation Fee :</th>
+						       	<td align="left">₹ {{ service.consultation_actual }} &nbsp; <strike> ₹ {{ service.consultation_fee }} </strike>&nbsp; {{ service.consultation_off }}% off</td>
+					      	</tr>
+						    <tr>
+						        <th>Appointment Fee :</th>
+						       	<td align="left">₹ {{ service.appointment_actual }} &nbsp; <strike> ₹ {{ service.appointment_fee }} </strike>&nbsp; {{ service.appointment_off }}% off</td>
+						   	</tr>
+						    <tr>
+						        <th>Languages known :</th>
+						       	<td align="left">None</td>
+
+						   	</tr>
+						    <tr>
+						       	<th>Location :</th>
+						   		<td align="left">None</td>
+						      	</tr>
+						   	<tr>
+						        <th>Timing :</th>
+						       	<td align="left">None</td>
+						    </tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			{% endif %}
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<div class="modal about-modal w3-agileits fade" id="BookModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+	      	<center>
+	      		<p style="color:#000">Book Appointment</p>
+		      		<form action="" method="post">{% csrf_token %}
+					{{ form|bootstrap_horizontal }}
+		    		<button type="submit" class="btn btn-danger" style="float: right;">Submit</button><br>
+					</form>
+					<form class="form-inline" role="form">
+				        <div class="form-group"></div>
+				        <div class="form-group"></div>
+						<div class="form-group"></div>
+				    </form>
+			    <div id="result" style="color:red;"></div>
+			</center>
+			</div> 
+		</div>
+	</div>
+</div>
+<div class="modal about-modal w3-agileits fade" id="CallModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+	      	<center>
+	      		<p style="color:#000">Call Doctor</p>
+		      		<form action="" method="post">{% csrf_token %}
+					{{ form|bootstrap_horizontal }}
+		    		<button type="submit" class="btn btn-danger" style="float: right;">Submit</button><br>
+					</form>
+					<form class="form-inline" role="form">
+				        <div class="form-group"></div>
+				        <div class="form-group"></div>
+						<div class="form-group"></div>
+				    </form>
+			    <div id="result" style="color:red;"></div>
+			</center>
+			</div> 
+		</div>
+	</div>
+</div>
+{% endblock %}
